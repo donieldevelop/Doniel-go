@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Doniel Go",
+    "slug": "doniel-go",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.doniel.go"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#16235E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.doniel.go",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-status-bar",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Doniel Go compte vos pas pour vous offrir des vivres."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Doniel Go utilise votre position pour indiquer au chauffeur où vous prendre."
+        }
+      ]
+    ],
+    "scheme": "donielgo",
+    "extra": {
+      "supabaseUrl": "https://tasapzudbelmefrygvkg.supabase.co",
+      "supabaseKey": "sb_publishable_oZc8z2vPoGD2p07RMootMQ_6JQxDTix"
+    }
+  }
+}
